@@ -4,7 +4,9 @@ def oxford_comma(array)
     array.pop
     list = array.join(" , ")
     list << "and #{last_value}"
+    puts list
   else
-    puts array
+    list = array.join
+    puts list
   end
 end
