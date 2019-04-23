@@ -6,7 +6,7 @@ def oxford_comma(array)
     list << "and #{last_value}"
     puts list
   else
-    new_string = array.join
+    new_string = array.to_s
     puts new_string
   end
 end
