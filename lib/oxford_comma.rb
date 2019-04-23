@@ -7,6 +7,6 @@ def oxford_comma(array)
     puts list
   else
     new_string = array.to_s
-    puts new_string
+    return new_string
   end
 end
