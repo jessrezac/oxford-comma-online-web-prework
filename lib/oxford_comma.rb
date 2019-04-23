@@ -6,7 +6,13 @@ def oxford_comma(array)
     list << "and #{last_value}"
     puts list
   else
-    new_string = array.inspect.to_s
-    return new_string
+    new_string = ""
+    array.each do |item|
+      new_string << item
+    end
+    puts new_string
   end
 end
+
+
+line_order = "The line is currently:"
