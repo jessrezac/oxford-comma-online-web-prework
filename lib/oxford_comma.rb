@@ -1,6 +1,10 @@
 def oxford_comma(array)
-  last_value = array.last
-  array.pop
-  list = array.join(" , ")
-  list << "and #{last_value}"
+  if array.size > 1
+    last_value = array.last
+    array.pop
+    list = array.join(" , ")
+    list << "and #{last_value}"
+  else
+    puts array
+  end
 end
