@@ -1,6 +1,9 @@
 def oxford_comma(array)
   if array.size > 2
-    puts "i haven't done this yet"
+    last_item = array.last
+    array.pop
+    new_string = array.join(", ")
+    new_string << "and #{last_item}"
   elsif array.size == 2
     array.join(" and ")
   else
